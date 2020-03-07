@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="extjs/resources/css/ext-all.css" rel="stylesheet" />
+
+    <script src="extjs/adapter/ext/ext-base-debug.js"></script>
+    <script src="extjs/ext-all-debug-w-comments.js"></script>
+
+    <title></title>
+    <script type="text/javascript">
+        Ext.onReady(function () {
+            var myCallback = function (btn, text) {
+                console.info('Вы нажали ' + btn);
+                if (text) {
+                    console.info('Вы ввели ' + text);
+                }
+            }
+            Ext.MessageBox.show({
+                title: 'Будьте осторожны!',
+                msg: 'Вы уверены?',
+                width: 300,
+                buttons: Ext.MessageBox.YESNOCANCEL,
+                fn: myCallback,
+                icon: Ext.MessageBox.QUESTION
+            });
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "extjs@3.4.1-1",
+      "destination": "lib/extjs/"
+    }
+  ,
+{
+  "library": "extjs@3.4.1-1",
+  "destination": "wwwroot/extjs/"
+}
+]
+}
